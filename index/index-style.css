@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.container{
+    background-color: #1b0d9e;
+    color: white;
+    width: 100%;
+
+    
+}
+nav img{
+    width: 50px;
+    height: 90px;
+    margin: 0;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(27, 13, 158);
+    color: white;
+
+}
+nav img{
+    width: 150px;
+    
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.navlinks ul li a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li a:hover::after{
+    width: 100%;
+}
+nav .bi{
+    display: none;
+}
+
+/* ------------article------------ */
+.body-container{
+    margin: 20px;
+    display: flex;
+    
+}
+.column1{
+    flex: 70%;
+    justify-content: column;
+    grid-area: aside;
+}
+    
+
+.column1 img{
+    margin-top: 30px;
+    width: auto;
+    display: block;
+    align-items: center;
+}
+.column1 h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.column1 p{
+    font-size: 18px;
+    color: #666;
+    border-bottom: 2px solid #66666686;
+    padding-bottom: 60px;
+}
+.selection{
+    margin-top: 20px;
+    display: flex;
+    border-top: 2px solid ;
+    padding-top: 20px;
+}
+
+.art-img{
+    flex: 1;
+    
+}
+
+.selection img{
+    width: 140px;
+    height: 100px;
+    margin: 0;
+    margin-right: 20px;
+    
+}
+.selection .artext{
+    font-size: 14px;
+}
+.selection h5{
+    margin-top: 20px;
+    font-size: 13px;
+}
+.selection a{
+    text-decoration: none;
+    color: #000;
+}
+article h1{
+    margin-top: 20px;
+}
+span{
+    color: #f44336;
+}
+
+/* trending */
+.container-aside {
+    flex: 30%;
+    margin: 10px;
+    box-sizing: inherit;
+}
+.container-aside h1{
+    font-size: 40px;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+.container-aside ol li{
+    font-size: 23px;
+}
+aside a{
+    text-decoration: none;
+    color: #000000;
+}
+aside ol{
+    color: #f44336;
+}
+aside #trend{
+    margin: 12px;
+    padding: 25px;
+    border-bottom: 2px solid #000000;
+}
+aside  li:hover,aside a:hover{
+    background-color: #f44336;
+    color: #fff;
+}
+aside .aside-trend {
+    position: -webkit-sticky;
+    position: fixed;
+    top : 0;
+  }
+
+  /* image trending */
+
+  .aside-img img{
+    width: 100%;
+    height: 70vh;
+    margin: 10px;
+    align-items: center;
+  }
+  .aside-img a:hover{
+    background-color: #fff;
+  }
+
+  /* Grid card imgages */
+
+.latest{
+    margin: 30px;
+}
+  .grid-card {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .grid-card main{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px ;
+  }
+  .grid-card main img{
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+  }
+.grid-card a{
+    text-decoration: none;
+    color: #000;
+}
+main .text{
+    margin: 5px;
+    
+}
+.text h3{
+    margin-bottom: 20px;
+}
+.text h4{
+    display: flex;
+    align-items: flex-end;
+}
+/* Footer css */
+
+footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: rgb(27, 13, 158);
+    color: white;
+    display: flex;
+}
+footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+footer form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+}
+footer form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icon {
+    margin:30px;
+}
+.social-icon i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+.social-icon a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.social-icon a::after{
+    text-decoration: none;
+}
+
+/* --------------for mobile devices-------------- */
+
+@media screen and (min-width: 350px) and (max-width: 900px) {
+
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        background: #f4433683;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .bi{
+        display: block;
+        color: #fff;
+        margin : 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks ul{
+        padding: 30px;
+    }
+    .navlinks ul li a::after{
+        content:'';
+        width: 0%;
+        height: 2px;
+        background: #a79695;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .body-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column1 h1{
+        font-size: 18px;
+    }
+    .column1 p{
+        font-size: 14px;
+    }
+    .column1 img {
+        width: 100%;
+    }
+    .art-img{
+        justify-content: row;
+        
+    }
+    .selection{
+        display: flex;
+        flex-direction: row;
+    }
+    .selection img{
+        width: auto;
+        margin: 0;
+        margin-right: 20px;
+    
+    }
+    .grid-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .container-aside h1{
+        font-size: 25px;
+    }
+    .container-aside ol li{
+        font-size: 14px;
+    }
+    /* footer */
+    footer{
+        margin-top: 150px;
+        width: 100%;
+        padding: 100px 15%;
+        background: rgb(27, 13, 158);
+        color: white;
+        font-size: 12px;
+        display: flex;
+    }
+    footer div{
+        text-align: center;
+    }
+    .col-2{
+        flex-grow: 2;
+    }
+    footer div h3{
+        font-weight: 300;
+        margin-bottom: 30px;
+
+    }
+    .col-1 a{
+        text-decoration: none;
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+    }
+    footer form input{
+        width: 150px;
+        height: 35px;
+        border-radius: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    footer form button{
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 12px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .social-icon {
+        margin: 25px;
+    }
+    .social-icon i{
+        font-size: 17px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .social-icon a{
+        color: #fff;
+        text-decoration: none;
+    
+    }
+    
+    .social-icon a::after{
+        text-decoration: none;
+    }
+        
+}    

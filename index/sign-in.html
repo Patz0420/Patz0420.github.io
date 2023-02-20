@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="sign-in.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <section class="header">
+        <img src="" alt="">
+     
+         <nav>
+             <a href="Home.html"><img src="" alt=""></a>
+             <div class="navlinks" id="navlinks">
+ 
+                 <i class="bi bi-x-square-fill" onclick="hideMenu()"></i>
+                 <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">About Us</a></li>
+                     <li><a href="">Events</a></li>
+                     <li><a href="">Visit Us</a></li>
+                 </ul>
+             </div>
+             <i class="bi bi-list" onclick="showMenu()"></i>
+         </nav>
+ 
+    <div class="container">
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <label for="email" name="email" id="email">Email</label>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password">
+            <label for="pass" name="pass" id="pass">Password</label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+        <!-- JavaScript for toogle navigation -->
+        <script>
+
+            var navlinks = document.getElementById("navlinks");
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+    
+        </script>       
+    
+</body>
+</html>
