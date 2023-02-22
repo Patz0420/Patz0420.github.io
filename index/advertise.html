@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advertise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h2>COURT</h2>
+            <a href="Home.html"></a>
+            <div class="navlinks" id="navlinks">
+
+                <i class="bi bi-x-square-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index/home.html">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Visit Us</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+    <!-- -------------BODY------------- -->
+    <div class="container-body">
+        <div class="side-adds">
+            <h2>ADVERTISE</h2>
+            <h2>ADVERTISE</h2>
+            <h2>ADVERTISE</h2>
+        </div>
+            <div class="advertise">
+                <h1>WANT TO <br><span>ADVERTISE</span> <br> COURT?</h1>
+                <h3>Please fill out this form and we’ll be in touch!</h3>
+
+                <form action="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZdBnqNjkmBQLZqfWhZrMThmrLnmpfxHSSKzMsXcphVcfwfvfxNpTTZqxtHpGzsGvFGMcL">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" cols="49" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    </div>
+
+    <div class="footer">
+        <h2>Sign up for the Court<br>News</h2>
+        <form action="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZdBnqNjkmBQLZqfWhZrMThmrLnmpfxHSSKzMsXcphVcfwfvfxNpTTZqxtHpGzsGvFGMcL">
+                <input type="email" name="signup" id="signup" placeholder="Email Address" required>
+                <button type="submit">Submit</button>
+        </form>
+        
+            <h1>Follow Us</h1>
+            <div class="socialm">
+                <a href="https://www.facebook.com/pAtZ.cOoLfRiEnDs">
+                <i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com/20patz20?igshid=YmJhNjkzNzY=">
+                <i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/patz091222?t=9dOSNjxL4jUj0OqBPYxIqQ&s=03">
+                <i class="bi bi-twitter"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B639704906866&text&app_absent=0">
+                <i class="bi bi-whatsapp"></i></a>
+        </div>
+    </div>
+
+        <!-- JavaScript for toogle navigation -->
+        <script>
+
+            var navlinks = document.getElementById("navlinks");
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+    
+        </script>       
+    
+</body>
+</html>

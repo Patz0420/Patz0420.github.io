@@ -118,5 +118,9 @@ nav .bi{
         margin: auto;
         transition: 0.5s;
     }
+    .textbox h1{
+        font-size: 35px;
+        text-shadow: #060607 3px 4px;
+    }
     
 }
