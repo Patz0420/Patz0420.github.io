@@ -39,7 +39,7 @@ nav{
     position: relative;
 }
 .navlinks ul li a{
-    color: #fff;
+    color: #fff5;
     text-decoration: none;
     font-size: 14px;
 }
@@ -58,68 +58,84 @@ nav{
 nav .bi{
     display: none;
 }
-/* ---------------ADVERTISE-------------- */
-.container-body{
+/* ---------------------ARTICLE-------------------- */
+.container-art{
+    margin: 12px;
+    color: #fff;
+}
+.article h1{
+    font-size: 20px;
+}
+.header{
+    margin-bottom: 5px;
+}
+.header img{
+    width: 100%;
+}
+.header p{
+    font-size: 14px;
+}
+.article1 img{
+    width: 100%;
+    min-height: fit-content;
+}
+.artext a{
+    text-decoration: none;
+    color: #957C3D;
+}
+.author-date {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    
 }
-.side-adds {
-    margin-top: 50px;
-    background-color: #957C3D;
-    box-shadow: solid 1px #fff 2px 2px;
-}
-.side-adds h2{
-    font-size: 60px;
-    margin: 0px;
-    color: #fff;
-}
-.advertise h1{
-    margin-top: 20px;
-    color: #fff;
-    font-size: 30px;
-    margin-left: 30px;
-    text-align: left;
-    
-}
-.advertise span{
-    font-style: italic;
-}
-.advertise h3{
-    font-size: 13px;
-    color: #fff;
-}
-.advertise form{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.advertise form input{
+.author-date ul li{
+    list-style: none;
+    display: inline-block;
     position: relative;
-    align-items: center;
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
-    color: #002349;
+    padding: 10px 15px;
 }
-.advertise form button{
-    font-size: 18px;
-    padding: 5px;
-    color: #fff;
-    background-color: #957C3D;
-}
-form textarea{
-    padding: 10px;
-    margin-top: 10px;
+.author-date ul{
     margin-bottom: 20px;
-    width: 90%;
+    border-bottom: 2px solid #957C3D;
 }
-form button:hover{
-    color: #002349;
+.container-aside{
+    margin: 10px;
+    color: #fff;
 }
-/* -------------footer--------------- */
+.aside h1{
+    font-size: 20px;
+}
+.aside a{
+    text-decoration: none;
+    color: #fff;
+}
+.aside-trend ol{
+    color: #957C3D;
+}
+.aside #trend{
+    margin: 20px;
+    padding: 12px;
+    border-bottom: 2px solid #957C3D;
+}
+.aside  li:hover,.aside a:hover{
+    background-color: #957C3D;
+    color: #fff;
+    cursor: pointer;
+}
+/* ------------------YOUTUBE EMBED------------------- */
+.youtubevideo{
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #957C3D;
+}
+.youtubevideo h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.youtubevideo iframe{
+    width: 100%;
+}
+
+/* --------------FOOTER----------------- */
 .footer{
     margin-top: 30px;
     background-color: #957C3D;
@@ -171,36 +187,46 @@ form button:hover{
     font-size: 30px;
     color: #fff;
 }
-@media screen and (min-width:1060px){
-    .container-body{
-        display: grid;
-        grid-template-columns: 1fr 1fr;    
+/* -------------------desktop and laptop---------------- */
+@media screen and (min-width: 1300px){
+    .container-art{
+        margin: 15px;
     }
-    nav h2{
-        font-size: 50px;
+    .article h1{
+        font-size: 30px;
     }
-    .side-adds h2{
-        font-size: 80px;
-        font-stretch: expanded;
-        padding-top: 30px;
+    .container-all{
+        display: flex;
     }
-    .footer h2{
-        text-align: center;
-        font-size: 55px;
+    .article1{
+        flex: 70%;
     }
-    .footer form input{
-        width: 50%;
+    .article1 img{
+        height: 600px;
     }
-    .footer h1{
-        text-align: center;
-        font-size: 40px;
+    .container-aside{
+        flex: 30%;
     }
-    .socialm a{
+    .aside h1{
+        font-size: 20px;
+    }
+    .aside a{
         text-decoration: none;
         color: #fff;
     }
-    .socialm i{
-        width: 30px;
-        margin: 50px;
+    .aside-trend ol{
+        color: #957C3D;
     }
+    .aside #trend{
+        margin: 20px;
+        padding: 12px;
+        border-bottom: 2px solid #957C3D;
+    }
+    .aside  li:hover,.aside a:hover{
+        background-color: #957C3D;
+        color: #fff;
+        cursor: pointer;
+    }
+    
 }
+
