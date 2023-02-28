@@ -188,7 +188,48 @@ nav .bi{
     color: #fff;
 }
 /* -------------------desktop and laptop---------------- */
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    .container-art{
+        margin: 15px;
+    }
+    .article h1{
+        font-size: 30px;
+    }
+    .container-all{
+        display: flex;
+    }
+    .article1{
+        flex: 70%;
+    }
+    .article1 img{
+        height: 600px;
+    }
+    .container-aside{
+        flex: 30%;
+    }
+    .aside h1{
+        font-size: 20px;
+    }
+    .aside a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .aside-trend ol{
+        color: #957C3D;
+    }
+    .aside #trend{
+        margin: 20px;
+        padding: 12px;
+        border-bottom: 2px solid #957C3D;
+    }
+    .aside  li:hover,.aside a:hover{
+        background-color: #957C3D;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (min-width: 900px) and (max-width: 1200px){
     .container-art{
         margin: 15px;
     }
